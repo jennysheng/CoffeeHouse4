@@ -9,11 +9,13 @@
     "@sailshq/lodash": "^3.10.3",
     "@sailshq/socket.io-redis": "^5.2.0",
     "sails": "^1.1.0",
+   
     "sails-hook-apianalytics": "^2.0.3",
     "sails-hook-organics": "^0.15.0",
     "sails-hook-orm": "^2.1.1",
     "sails-hook-sockets": "^1.5.5",
-    "sails-mongo": "^1.0.1"
+    "sails-mongo": "^1.0.1",
+  
   },
   "devDependencies": {
     "@sailshq/eslint": "^4.19.3",
@@ -32,9 +34,9 @@
   "main": "app.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/anonymous node/sails user/coffee-house-4.git"
+    "url": "git@github.com:jennysheng/CoffeeHouse4.git"
   },
-  "author": "anonymous node/sails user",
+  "author": "jenny",
   "license": "",
   "engines": {
     "node": "^10.15"
