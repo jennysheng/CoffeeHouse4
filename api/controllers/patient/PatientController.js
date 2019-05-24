@@ -20,6 +20,7 @@ module.exports = {
   },
   add: function (req, res) {
     res.view('pages/patient/add');
+   
 
 
   },
@@ -81,6 +82,20 @@ module.exports = {
       }
       res.view('pages/patient/edit', { patient: patient });
     });
+
+  },
+  graph: function (req, res) {
+
+    // res.view('edit');
+   /* Patient.findOne({ id: req.params.id }).exec(function (err, patient) {
+      if (err) {
+        res.send(500, { error: 'Database error' });
+      }
+    //  res.view('pages/patient/graph', { patient: patient });
+  
+  
+    });*/
+    res.view('pages/patient/graph');
 
   },
   delete: function (req, res) {

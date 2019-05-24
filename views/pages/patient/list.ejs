@@ -1,7 +1,7 @@
 <h1 class="display-4">Patient</h1>
 
 <table class="table table-striped">
-    
+
 
     <thead>
         <tr>
@@ -24,6 +24,7 @@
             <td><%=patient.medicine %></td>
             <td><%=patient.sleepingpattern %></td>
             <td>
+                <a href="/graph/<%=patient.id %>" class="btn btn-warning">Graph</a>
                 <a href="/edit/<%=patient.id %>" class="btn btn-primary">Edit</a>
                 <form class="d-inline" action="/patient/delete/<%=patient.id %>" method="PUT">
                     <input type="submit" class="btn btn-danger" value="Delete">
