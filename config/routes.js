@@ -12,6 +12,13 @@ module.exports.routes = {
 
   'GET /patient/list': { action: 'patient/patient/list' },
   'GET /patient/add': { action: 'patient/patient/add' },
+  'GET /patient/create': { action: 'patient/patient/create' },
+  'GET /patient/delete': { action: 'patient/patient/delete' },
+  'GET /patient/delete/:id': { action: 'patient/patient/delete' },
+  'PUT/patient/update/:id': { action: 'patient/patient/update' },
+  //put can't redirect!!!!!!!!!!
+ 
+  '/edit/:id': { action: 'patient/patient/edit' },
   //  ╦ ╦╔═╗╔╗ ╔═╗╔═╗╔═╗╔═╗╔═╗
   //  ║║║║╣ ╠╩╗╠═╝╠═╣║ ╦║╣ ╚═╗
   //  ╚╩╝╚═╝╚═╝╩  ╩ ╩╚═╝╚═╝╚═╝

@@ -167,5 +167,5 @@ without necessarily having a billing card.`
 
   },
 
-  datastore: 'default',
+  datastore: 'mydb',
 };
