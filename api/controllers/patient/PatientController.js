@@ -63,10 +63,10 @@ module.exports = {
       /*if (err) {
         res.send(500, { error: 'Database Error' });
       }*/
-      if (err) { return (err) } else {
+      if (err) return (err);
 
-        res.redirect('/patient/list');
-      };
+      res.redirect('/patient/list');
+
 
     });
     return false;
