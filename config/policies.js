@@ -11,6 +11,13 @@
 module.exports.policies = {
 
   '*': 'is-logged-in',
+  /*'*': [
+    'basicAuth',
+    'sessionAuth',
+    'ModelPolicy',
+    'RolePolicy'
+
+  ],*/
 
   // Bypass the `is-logged-in` policy for:
   'entrance/*': true,
