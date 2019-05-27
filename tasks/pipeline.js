@@ -72,6 +72,7 @@ var jsFilesToInject = [
   'dependencies/vue.js',
   'dependencies/vue-router.js',
   'dependencies/**/*.js',
+  'dependencies/sails.io.js',
 
   // First amongst the app-level files, bring in cloud configuration
   'js/cloud.setup.js',
