@@ -16,9 +16,7 @@ module.exports = {
 
     medicine: { type: 'string' },
 
-    sleepingpattern: { type: 'string' }
-
- 
+    sleepingpattern: { type: 'string' },
    
 
   },
