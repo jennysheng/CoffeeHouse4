@@ -20,7 +20,7 @@ module.exports = {
   },
   add: function (req, res) {
     res.view('pages/patient/add');
-   
+
 
 
   },
@@ -84,18 +84,35 @@ module.exports = {
     });
 
   },
-  graph: function (req, res) {
+  graph: function (req, res, next) {
+    //start websocket-----------------------------------------
 
     // res.view('edit');
-   /* Patient.findOne({ id: req.params.id }).exec(function (err, patient) {
-      if (err) {
-        res.send(500, { error: 'Database error' });
-      }
-    //  res.view('pages/patient/graph', { patient: patient });
-  
-  
-    });*/
+    /* Patient.findOne({ id: req.params.id }).exec(function (err, patient) {
+       if (err) {
+         res.send(500, { error: 'Database error' });
+       }
+     //  res.view('pages/patient/graph', { patient: patient });
+   
+   
+     });*/
+    const express = require('express');
+    const http = require('http');
+    const WebSocket = require('ws');
+    const moment = require('moment');
+    const path = require('path');
+
+    const app = express();
+    const server = http.createServer(app);
+    const wss = new WebSocket.Server({ server });
+
+
+
+
+
+
     res.view('pages/patient/graph');
+    return next;
 
   },
   delete: function (req, res) {
